@@ -1,8 +1,10 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore';
 
+const API_KEY = process.env.REACT_APP_API_KEY;
+
 const firebaseConfig = {
-   apiKey: "AIzaSyBUrBnj-VEYO-DHj8jiAvg9vSYarNriLXc",
+   apiKey: API_KEY,
    authDomain: "first-project-d3140.firebaseapp.com",
    databaseURL: "https://first-project-d3140-default-rtdb.firebaseio.com",
    projectId: "first-project-d3140",
