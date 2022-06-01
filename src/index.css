@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  background-color: rgb(250, 242, 231);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+  margin: 10px;
+  font: normal 17px arial;
+  background-color: rgb(231, 231, 231);
+  border: 1px solid rgb(231, 231, 231);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  border-radius: 4px;
+}
+
+.content {
+  min-height: calc(100vh - 70px - 64px);
+  padding: 1.5rem 0;
+}
+
+nav {
+  padding: 0 1rem;
+}
+
+.filter {
+  margin: 30px auto 30px 30px;
+}
+
+label:not(:last-child) {
+  margin-right: 1rem;
+}
+
+/* Book*/
+
+.books {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.group-name {
+  text-align: center;
+  padding: 10px;
+}
+
+.card {
+  height: 900px;
+}
+
+.card-image {
+  height: 480px;
+}
+
+.card-title {
+  font-size: 24px;
+  line-height: 32px;
+
+  text-align: center;
+  padding: 10px;
+
+  height: 140px;
+}
+
+.card-content {
+  height: 520px;
+  padding: 20px 10px;
+}
+
+
+.button-delete {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+  margin: 10px;
+  font: normal 17px arial;
+  background-color: red;
+  border: 1px solid red;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  border-radius: 4px;
+}
+
+/* Modal */
+
+.modal_button {
+  width: 200px;
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+  margin: 10px;
+  font: normal 17px arial;
+  background-color: rgb( 43, 153, 91 );
+  border: 1px solid rgb( 33, 126, 74 );
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  border-radius: 4px;
+}
+
+.modal_wrapper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.438);
+  backdrop-filter: blur(10px);
+
+  z-index: 2;
+}
+
+.modal_wrapper.open {
+  height: 100%;
+  width: 101%;
+  left: -1%;
+  display: block;
+}
+
+.modal_wrapper.close {
+  height: 0;
+  display: none;
+}
+
+.modal {
+  display: block;
+  max-width: 500px;
+  max-height: 100%;
+
+  background: white;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.modal::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.modal {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.modal_close {
+  text-align: right;
+  margin-top: -15px;
+  font-size: 40px;
+  color: gray;
+  cursor: pointer;
+}
+
+/* recommendation */
+
+.recommendation-wrapper {
+  min-height: 900px;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px 50px;
+  background-color: rgba(128, 128, 128, 0.342);
+}
+
+.recommendation-title {
+  text-align: center;
+}
+
+.recommendation-content {
+  height: 200px;
+  padding: 20px 10px;
+}
+
+.recommendation-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.recommendation-name {
+  display: block;
+  text-align: center;
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+}
